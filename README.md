@@ -28,20 +28,23 @@ Below you will see my CAD model for this walking robot.
   <img src="media/screenshots/rover_CAD.png" alt="Rover CAD Model" width="500"/>
 </p>
 
-## 3D Printing
-
-### Materials
+# 3D-Printed Inverter Magnet (Magnets Holder)
+![Image_2](https://github.com/user-attachments/assets/70fda216-17b3-48f9-8678-9de0781e7feb)
+The design I settled on utilizes one interior magnet alongside ten exterior magnets. I designed it on OnShape and then proceeded to print it using my Original Prusa Mini+ and using PrusaSlicer.
+# Specifications & Material(s)
+Below you can find the printer and material used.
+## 3D Printer
+ Original Prusa Mini+
+## Material(s)
 * [Grey ANYCUBIC 1kg, 1.75mm Filament ($13.99)](https://www.amazon.com/dp/B0834W5L3L?ref_=ppx_hzsearch_conn_dt_b_fed_asin_title_3)
-
-### 3D Printer
-Original Prusa Mini+ \
-**Software** \
-PrusaSlicer \
-**Settings** \
-Layer Height: .2mm \
-Infill: 50% \
-Supports: Everywhere \
-Estimated Printing Time: ~ 2hours.
+# Software
+ PrusaSlicer
+![Image_3](https://github.com/user-attachments/assets/1701ac93-f0d4-4695-80bd-659dac15fa1f)
+## Settings
+  Layer Height: .2mm \
+  Infill: 50% \
+  Supports: None \
+  Estimated Printing Time: 1 hour and 17 minutes
 
 ## Assembly
 
