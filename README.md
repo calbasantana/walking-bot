@@ -25,21 +25,29 @@ I designed the walking bot on OnShape and printed it using my Prusa Mini.
 Below you will see my CAD model for this walking robot.
 
 <p align="center">
-  <img src="media/screenshots/walkingbot_CAD.png" alt="Walking Bot CAD Model" width="500"/>
+  <img src="media/screenshots/walkingbot_CAD_Model.png" alt="Walking Bot CAD Model" width="500"/>
 </p>
 
-# 3D-Printed Inverter Magnet (Magnets Holder)
-![Image_2](https://github.com/user-attachments/assets/70fda216-17b3-48f9-8678-9de0781e7feb)
-The design I settled on utilizes one interior magnet alongside ten exterior magnets. I designed it on OnShape and then proceeded to print it using my Original Prusa Mini+ and using PrusaSlicer.
-# Specifications & Material(s)
+### Base of Walking Bot
+
+
+### Legs of Walking Bot
+
+### Feet of Walking Bot
+
+
+
+## Specifications & Material(s)
 Below you can find the printer and material used.
 ## 3D Printer
- Original Prusa Mini+
+Original Prusa Mini+
 ## Material(s)
 * [Grey ANYCUBIC 1kg, 1.75mm Filament ($13.99)](https://www.amazon.com/dp/B0834W5L3L?ref_=ppx_hzsearch_conn_dt_b_fed_asin_title_3)
 # Software
- PrusaSlicer
-![Image_3](https://github.com/user-attachments/assets/1701ac93-f0d4-4695-80bd-659dac15fa1f)
+PrusaSlicer
+
+[PRUSA SLICER IMAGE]
+
 ## Settings
   Layer Height: .2mm \
   Infill: 50% \
@@ -48,15 +56,7 @@ Below you can find the printer and material used.
 
 ## Assembly
 
-Once all parts have been lasercut and 3D printed, it is time for assembly. I highly suggest starting off with hot gluing all parts that need to be hot glued and waiting for a bit for them to dry. After doing this, it is recommended to assemble in the following order:
 
-* Place and screw the PCB. Make sure the ESP32 and motor drivers are on it.
-* Screw the motor mounts to the board.
-* Place the DC motors inside the motor mounts and screw them in, being very careful with their cables. I recommend placing the motors such that the cables coming out of them face towards the center of the rover (this way they won't get caught on stuff).
-* Screw the wheels onto the DC motors.
-* Connect the motors in the desired locations, using cable jumpers if necessary. **Black goes on GND and red on VCC**. It is recommended to have one motor in each of the numbered slots (like 1A, 2A, 3A, and 4A).
-* Connect the battery adapter cables.
-* Connect the batteries to test that all components work. **IMPORTANT**: If running the default code, it will have all motors moving forward, so if some wheels are spinning backwards, you can change the orientation of the motor connections such that the black cable is on VCC and red is on GND; **this only works to reverse the drive of motors, do not try this with the batteries**. Remove once you've confirmed all components seem to be working OK. Report any issues.
 
 Here's a video of a rover after assembly and testing.
 
