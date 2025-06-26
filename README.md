@@ -25,7 +25,7 @@ I designed the walking bot on OnShape and printed it using my Prusa Mini.
 Below you will see my CAD model for this walking robot.
 
 <p align="center">
-  <img src="media/screenshots/walkingbot_CAD_Model.png" alt="Walking Bot CAD Model" width="500"/>
+  <img src="media/screenshots/walkingbot_CAD_Model.png" alt="Walking Bot CAD Model" width="400"/>
 </p>
 
 ### Base of Walking Bot
@@ -36,7 +36,7 @@ The base of the walking bot is very important and one of my goals was to keep it
 * It is easier to print on my Prusa Mini and takes less time than previous bases
 
 <p align="center">
-  <img src="media/screenshots/base_CAD_Model.png" alt="Base CAD Model" width="500"/>
+  <img src="media/screenshots/base_CAD_Model.png" alt="Base CAD Model" width="400"/>
 </p>
 
 ### Legs of Walking Bot
@@ -44,8 +44,8 @@ The base of the walking bot is very important and one of my goals was to keep it
 As for the next part, I have also made the legs smaller than previous iterations. There are two left-sided and two right-sided legs that need to be printed. The small part at the bottom is to hold the second motor in place for the leg, to which the "foot" of the walking bot will be attached. Below you will see the left- and right-sided legs.
 
 <p align="center">
-  <img src="media/screenshots/left_leg_CAD_Model.png" alt="Left Leg CAD Model" width="500"/>
-  <img src="media/screenshots/right_leg_CAD_Model.png" alt="Right Leg CAD Model" width="500"/>
+  <img src="media/screenshots/left_leg_CAD_Model.png" alt="Left Leg CAD Model" width="300"/>
+  <img src="media/screenshots/right_leg_CAD_Model.png" alt="Right Leg CAD Model" width="300"/>
 </p>
 
 ### Feet of Walking Bot
@@ -53,8 +53,8 @@ As for the next part, I have also made the legs smaller than previous iterations
 Lastly, I wish to show here the feet of the walking bot. In previous iterations, the surface area of the bottom of the foot was too small and made it difficult for the walking bot to have friction against other surfaces. I did make it also a bit aesthetic by making the wing-shaped design. Below you will see the left- and right-sided parts. In my actual build, do note that I decided to flip the motors so the gear connected to the foot is on the bottom, thereby increasing the height of the walking bot.
 
 <p align="center">
-  <img src="media/screenshots/left_foot_CAD_Model.png" alt="Left Foot CAD Model" width="500"/>
-  <img src="media/screenshots/right_foot_CAD_Model.png" alt="Right Foot CAD Model" width="500"/>
+  <img src="media/screenshots/left_foot_CAD_Model.png" alt="Left Foot CAD Model" width="300"/>
+  <img src="media/screenshots/right_foot_CAD_Model.png" alt="Right Foot CAD Model" width="300"/>
 </p>
 
 ## Specifications & Material(s)
@@ -67,15 +67,15 @@ Original Prusa Mini+
 PrusaSlicer
 
 <p align="center">
-  <img src="media/screenshots/base_sliced.png" alt="Slicing of Base" width="500"/>
+  <img src="media/screenshots/base_sliced.png" alt="Slicing of Base" width="400"/>
 </p>
 
 <p align="center">
-  <img src="media/screenshots/legs_sliced.png" alt="Slicing of Legs" width="500"/>
+  <img src="media/screenshots/legs_sliced.png" alt="Slicing of Legs" width="400"/>
 </p>
 
 <p align="center">
-  <img src="media/screenshots/feet_sliced.png" alt="Slicing of Feet" width="500"/>
+  <img src="media/screenshots/feet_sliced.png" alt="Slicing of Feet" width="400"/>
 </p>
 
 ## Settings
@@ -92,19 +92,19 @@ Assembly is one of the trickest parts because everything is so compact and you s
 2. Label each of the four motors. This will help in the next step, during testing. Below you will see an image for 1 through 4, with one being in the back left, 2 in the front left, and so on.
 
 <p align="center">
-  <img src="media/photos/motor_orientation.jpg" alt="Motor Orientation" width="500"/>
+  <img src="media/photos/motor_orientation.jpg" alt="Motor Orientation" width="400"/>
 </p>
 
 3. Then, try to control each motor individually and have "IN" and "OUT" positions that are 90 degrees to each other, approximately. It helps to look at the code I have written to make this work with some random equations. In the photo below, the top two motors are in the "IN" position. The "OUT" position is 45 degrees below the position of the bottom two motors.
 
 <p align="center">
-  <img src="media/photos/four_motor_test_labeling.jpg" alt="Four Motor Test Labeling" width="500"/>
+  <img src="media/photos/four_motor_test_labeling.jpg" alt="Four Motor Test Labeling" width="400"/>
 </p>
 
 4. Once the first four motors have been programmed correctly, then attach the following four motors and the feet that go along with them. It also helps to label these motors so programming is easier. You should attach the feet in the same way as the previous parts, physically moving the gear to be at maximum at either the "UP" or "DOWN" position (I tried to do it at the "UP" position). Below you will see what the "DOWN" position ideally looks like.
 
 <p align="center">
-  <img src="media/photos/eight_motor_test_labeling.jpg" alt="Eight Motor Test Labeling" width="500"/>
+  <img src="media/photos/eight_motor_test_labeling.jpg" alt="Eight Motor Test Labeling" width="400"/>
 </p>
 
 5. Modify the code as needed to match the "UP" and "DOWN" positions for 90 and 0 degrees, approximately.
