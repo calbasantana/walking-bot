@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="media/photos/rover.jpg" alt="PCB Front" width="500"/>
+  <img src="media/photos/walkingbot.jpg" alt="Walking Bot" width="500"/>
 </p>
 
 # Introduction
@@ -14,7 +14,7 @@ The following materials need to be purchased for this walking robot (links inclu
 * [MG995 Servo (X8, $31.98 total)](https://www.amazon.com/Deegoo-FPV-Servo-MG995-Metal-Gear/dp/B07NQJ1VZ2/ref=sr_1_6?crid=1LRVW3LG4KGXD&dib=eyJ2IjoiMSJ9.cY6Rczg-OlaZeR22jUS8vOk7vd9JDTpqytGHpfWNxOlzQFdnAyPecryWF9KDcFX2pL2ia-pAG7zC4S_txmg_kkIxSdgtMvAg5yYaYJXFxklBoDVtZkeQmMhHJeYMrFIZERKQjOgSn0kTTQoBDRdeNHMaPW0c1Y-ldS6d29fXGHAN4X-1OEOwR2qHJR3leqAmfDyGmyF0VcpU1VPgNbuj1m3jghHgpEpPwSluAZ7lHcDHbbXuN0xwk1KAV87xcVZwunwntDmgJEUvePrW3sspIzfqw44Cj5WJN4kLdVq3MMA.C5VbtW8-uepQ90Cg2UnQXSa3J9jt21Cqt-MqjfxltAM&dib_tag=se&keywords=mg995%2Bservo&qid=1750712406&sprefix=mg995%2Bservo%2Caps%2C133&sr=8-6&th=1)
 * [Servo 2040 from Pimoroni (X1, $24 total)](https://shop.pimoroni.com/products/servo-2040?variant=39800591679571)
 
-The total estimated cost of this wlaking robot is around $88.97, but that can fluctuate based on deals and other things.
+The total estimated cost of this wlaking robot is around **$88.97**, but that can fluctuate based on deals and other things.
 
 # Walking Bot Body
 
@@ -25,7 +25,7 @@ I designed the walking bot on OnShape and printed it using my Prusa Mini.
 Below you will see my CAD model for this walking robot.
 
 <p align="center">
-  <img src="media/screenshots/rover_CAD.png" alt="Rover CAD Model" width="500"/>
+  <img src="media/screenshots/walkingbot_CAD.png" alt="Walking Bot CAD Model" width="500"/>
 </p>
 
 # 3D-Printed Inverter Magnet (Magnets Holder)
