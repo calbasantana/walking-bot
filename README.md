@@ -72,23 +72,4 @@ Go to the official [Thonny](https://thonny.org/) website and download the applic
 
 Rovers are programmed in microPython. Below you will find some instructions on how to program the rover, which requires that both .py files in this repostory (main.py and rover.py) are uploaded to the ESP32.
 
-## Programming Your Rover
-
-To program your rover, first open up the Thonny application. Then, follow the instructions below.
-
-1. Remove your ESP32 from your rover. Trying to connect to it while it is connected to the rover might damage the ESP32, so it is best to remove it and then connect to it.
-
-2. Press the STOP/Start button. At the bottom of the screen, you should see ">>>". This should indicate the ESP32 is connected.
-
-3. Go to File -> Open. Select from micropython device. Here, you should be able to open up the main.py file.
-
-4. You should also be able to open rover.py file to see available functions. Essentially, the most important three pieces of code are the following:
-
-  * **rover.move_motor(motor_num, direction, speed)**: You should input the motor number, the direction (forward or backward), and speed (100 - 1000). For example, rover.move_motor(1, forward, 300) moves motor 1 at a speed of 300 forward. You can have multiple motors move at the same time by having them on separate, but sequential lines like so:
-    * rover.move_motor(1, forward, 300)
-    * rover.move_motor(2, forward, 300) \
-  These two lines of code move motors 1 and 2 forward at a speed of 300.
-  * **sleep(time)**: This piece of code decides how long the previous piece of code runs for before moving to the next. If placed right after the two pieces of code from the last bullet point, it will move those two motors forward at a speed of 300 for 10 seconds before moving to the next piece of code. Decimals are allowed.
-  * **gradual_stop_all(direction="forward", initial_speed=700)**: This piece of code gradually stops all motors. No edits are necessary. However, if you would like to match the speed with the speed from previous line of code, you may do so.
-
 # Tips
