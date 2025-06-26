@@ -255,7 +255,7 @@ def collapse():
     servo7_up()
     servo8_up()
 ```
-## Example Run
+## Example Code
 
 With those functions, something like this can be used to move the walking bot:
 
