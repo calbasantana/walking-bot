@@ -136,8 +136,6 @@ def move_servo1(angle):
     angle = max(0, min(180, angle))
     duty = int(30 + (angle / 180) * 75)
     servo1.duty_u16(int(duty / 100 * 6553))
-def servo1_in(): move_servo1(50)
-def servo1_out(): move_servo1(0)
 ```
 
 For each of the motors I also created functions based on the move_servoX(angle), so for servo1, this looks like:
