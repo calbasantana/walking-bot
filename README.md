@@ -114,11 +114,11 @@ Assembly is one of the trickest parts because everything is so compact and you s
 
 That's it!
 
-Here's a video of the walking bot (tethered):
+Unfortunately, at time of writing, I am still having some issues with the code and getting the walking bot to work properly, but I want to show at least where I am now with the project:
 
 https://github.com/user-attachments/assets/0c37907c-10ff-4d18-97b6-cf6ddd99ad3e
 
-This video can also be found under the media folder.
+Keep in mind that the walking bot is still tethered via USB to my computer.
 
 # Programming
 
@@ -126,132 +126,73 @@ I programmed the walking bot on Thonny. I built some basic functions to create "
 
 ## Individual Servo Control
 
-Here is the code that I used to control each servo individually and test them as well:
+Here is an example of the code that I used to control each servo individually and test them as well:
 
 ```bash
-# Servo 1 – Rear Right Hip – GPIO 21
-servo1 = PWM(Pin(21), freq=50)
+# Servo 1 – Rear Right Hip – GPIO 0
+servo1 = PWM(Pin(0))
+servo1.freq(50)
 def move_servo1(angle):
     angle = max(0, min(180, angle))
     duty = int(30 + (angle / 180) * 75)
-    servo1.duty(duty)
+    servo1.duty_u16(int(duty / 100 * 6553))
+def servo1_in(): move_servo1(50)
+def servo1_out(): move_servo1(0)
 ```
 
 For each of the motors I also created functions based on the move_servoX(angle), so for servo1, this looks like:
 
 ```bash
-def servo1_in(): move_servo1(90)
+def servo1_in(): move_servo1(50)
 def servo1_out(): move_servo1(0)
 ```
 
 ## Locomotion Functions
 
-After creating all the individual functions, the following were created to move the walking bot:
+After creating all the individual functions, the following function was created to move the walking bot:
 
 ```bash
-def forward_step(delay=0.4):
-    servo3_up()
-    servo1_up()
-    servo4_up()
-    sleep(delay)
-    servo3_out()
-    servo1_out()
-    servo4_out()
-    sleep(delay)
-    servo3_down()
-    servo1_down()
-    servo4_down()
-    sleep(delay)
+def walk_forward(steps=1):
+    for _ in range(steps):
+        # Step 1 – Lift front left
+        servo7_up()
+        sleep(0.2)
+        servo3_in()
+        sleep(0.2)
+        servo7_down()
+        sleep(0.2)
+        servo3_out()
+        sleep(0.2)
 
-    servo2_up()
-    sleep(delay)
-    servo2_out()
-    sleep(delay)
-    servo2_down()
-    sleep(delay)
+        # Step 2 – Lift rear right
+        servo5_up()
+        sleep(0.2)
+        servo1_in()
+        sleep(0.2)
+        servo5_down()
+        sleep(0.2)
+        servo1_out()
+        sleep(0.2)
 
-def backward_step(delay=0.4):
-    servo3_up()
-    servo1_up()
-    servo4_up()
-    sleep(delay)
-    servo3_in()
-    servo1_in()
-    servo4_in()
-    sleep(delay)
-    servo3_down()
-    servo1_down()
-    servo4_down()
-    sleep(delay)
+        # Step 3 – Lift front right
+        servo6_up()
+        sleep(0.2)
+        servo2_in()
+        sleep(0.2)
+        servo6_down()
+        sleep(0.2)
+        servo2_out()
+        sleep(0.2)
 
-    servo2_up()
-    sleep(delay)
-    servo2_in()
-    sleep(delay)
-    servo2_down()
-    sleep(delay)
-
-def turn_right(delay=0.4):
-    servo3_up()
-    servo4_up()
-    sleep(delay)
-    servo3_out()
-    servo4_out()
-    sleep(delay)
-    servo3_down()
-    servo4_down()
-    sleep(delay)
-
-    servo1_up()
-    servo2_up()
-    sleep(delay)
-    servo1_in()
-    servo2_in()
-    sleep(delay)
-    servo1_down()
-    servo2_down()
-    sleep(delay)
-
-def turn_left(delay=0.4):
-    servo1_up()
-    servo2_up()
-    sleep(delay)
-    servo1_out()
-    servo2_out()
-    sleep(delay)
-    servo1_down()
-    servo2_down()
-    sleep(delay)
-
-    servo3_up()
-    servo4_up()
-    sleep(delay)
-    servo3_in()
-    servo4_in()
-    sleep(delay)
-    servo3_down()
-    servo4_down()
-    sleep(delay)
-
-def stand():
-    servo1_in()
-    servo2_in()
-    servo3_in()
-    servo4_in()
-    servo5_down()
-    servo6_down()
-    servo7_down()
-    servo8_down()
-
-def collapse():
-    servo1_in()
-    servo2_in()
-    servo3_in()
-    servo4_in()
-    servo5_up()
-    servo6_up()
-    servo7_up()
-    servo8_up()
+        # Step 4 – Lift rear left
+        servo8_up()
+        sleep(0.2)
+        servo4_in()
+        sleep(0.2)
+        servo8_down()
+        sleep(0.2)
+        servo4_out()
+        sleep(0.2)
 ```
 ## Example Code
 
@@ -259,18 +200,12 @@ With those functions, something like this can be used to move the walking bot:
 
 ```bash
 stand()
-sleep(1)
-forward_step()
-sleep(1)
-turn_right()
-sleep(1)
-backward_step()
-sleep(1)
-turn_left()
-sleep(1)
+walk_forward(10)
 collapse()
 ```
 
 # Tips
 
 I don't expect anyone to exactly want to replicate this walking bot; this is mostly for me. However, I do think a lot of things for a build like this are specific to the motors, so that's why it's really important to make sure the orientation of each motor's limit is correct. You can also rewrite the code entirely to your liking or create additional functions. I personally didn't feel the need to create a dedicated class or have a separate file for the code, but others may.
+
+I also haven't gotten to get this robot to fully work and I am also not sure if I will continue with this project due to time constraints I have at the moment. If someone else builds something similar, I'd surely take another look at this project again.
