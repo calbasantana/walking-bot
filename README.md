@@ -92,13 +92,13 @@ Assembly is one of the trickest parts because everything is so compact and you s
 2. Label each of the four motors. This will help in the next step, during testing. Below you will see an image for 1 through 4, with one being in the back left, 2 in the front left, and so on.
 
 <p align="center">
-  <img src="media/photos/motor_orientation.jpg" alt="Motor Orientation" width="400"/>
+  <img src="media/photos/four_motor_test_labeling.jpg" alt="Four Motor Test Labeling" width="400"/>
 </p>
 
 3. Then, try to control each motor individually and have "IN" and "OUT" positions that are 90 degrees to each other, approximately. It helps to look at the code I have written to make this work with some random equations. In the photo below, the top two motors are in the "IN" position. The "OUT" position is 45 degrees below the position of the bottom two motors.
 
 <p align="center">
-  <img src="media/photos/four_motor_test_labeling.jpg" alt="Four Motor Test Labeling" width="400"/>
+  <img src="media/photos/motor_orientation.jpg" alt="Motor Orientation" width="400"/>
 </p>
 
 4. Once the first four motors have been programmed correctly, then attach the following four motors and the feet that go along with them. It also helps to label these motors so programming is easier. You should attach the feet in the same way as the previous parts, physically moving the gear to be at maximum at either the "UP" or "DOWN" position (I tried to do it at the "UP" position). Below you will see what the "DOWN" position ideally looks like.
