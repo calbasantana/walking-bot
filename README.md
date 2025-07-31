@@ -4,7 +4,7 @@
 
 # Introduction
 
-I have been trying, over several years, to develop a walking robot. I've come across many issues, from not enough servos to too many servos (and having a heavy robot that couldn't walk). This repository highlights the latest iteration of this walking robot.
+I have been trying, over several years, to develop a walking robot. I've come across many issues, from not enough servos to too many servos (and having a heavy robot that couldn't walk). This repository highlights the latest iteration of this walking robot (which, unfortunately, is still not successful, but has demonstrated some progress from previous iterations).
 
 # Materials
 
@@ -116,7 +116,7 @@ That's it!
 
 Here's a video of the walking bot (tethered):
 
-[INSERT THE VIDEO HERE]
+https://github.com/user-attachments/assets/0c37907c-10ff-4d18-97b6-cf6ddd99ad3e
 
 This video can also be found under the media folder.
 
