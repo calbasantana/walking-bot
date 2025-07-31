@@ -1,5 +1,3 @@
-**THIS IS A WORK IN PROGRESS; PUBLISHED FOR FEEDBACK ONLINE AND WILL BE COMPLETED SOON**
-
 <p align="center">
   <img src="media/photos/walkingbot.jpg" alt="Walking Bot" width="500"/>
 </p>
